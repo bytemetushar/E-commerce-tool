@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <i class="fa-solid fa-bars" id="menu-icon" onclick="menutoggle()"></i>
+        
+            <nav class="navbar">
+                <i class="fa-regular fa-circle-xmark" id="cross-icon" onclick="menutoggle()"></i>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#team-section">Our Team</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+    </header>
+
+
+    <!-- Welcome section -->
+    <div class="welcome">
+        <h1><span class="typing-text"></span></h1>
+    </div>
+
+
+    <!-- Main Section -->
+    <section>
+        <div class="main">
+            <!-- discription section -->
+            <div class="description">
+                <img src="homeimage.jpg" alt="">
+            </div>
+    
+            <!-- upload section -->
+            <div class="upload">
+                <div id="both-camera">
+                    <input type="file" id="camera1" accept="image/*" capture="environment"/>
+                    <label for="camera1"><img width="50" height="50" src="https://img.icons8.com/quill/100/camera.png" alt="camera"/><br>Back camera</label>
+                    <input type="file" id="camera2" accept="image/*" capture="user"/>
+                    <label for="camera2"><img width="50" height="50" src="https://img.icons8.com/quill/100/camera.png" alt="camera"/><br>Front camera</label>
+                </div>
+                <span>OR</span>
+                <input type="file" id="file_upload">
+                <label for="file_upload">Upload from device</label>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section">
+        <div id="about">
+            <h2 REFL-TEXT="ABOUT">ABOUT</h2>
+            <div id="about-para">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt veniam, reiciendis error molestias id nam voluptas autem accusantium quibusdam sapiente modi laudantium temporibus! Aliquid recusandae, cupiditate est explicabo voluptatum ducimus voluptates quos cumque eius ullam illo laborum hic, id eligendi. Voluptatibus ab vero totam ipsam cum sint aut nobis quo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, possimus! Explicabo voluptates, veniam quidem aperiam exercitationem consectetur modi quisquam id ipsam suscipit accusantium facere velit assumenda quae obcaecati quis earum veritatis quaerat expedita soluta cupiditate nulla? Quas voluptate maiores, similique quia nihil vitae qui ea at inventore laudantium, officiis perferendis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores accusamus deserunt, corporis et quisquam nulla velit. Sapiente doloremque excepturi eligendi, tempore accusantium neque ipsa quam omnis assumenda reprehenderit magnam sequi fugiat perferendis facere obcaecati asperiores saepe autem maxime soluta. Veniam dolorem quibusdam animi necessitatibus explicabo libero vitae? 
+                </p>
+            </div>    
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section id="team-section">
+        <h2>OUR TEAM</h2>
+        <div id="team">
+            <div id="team-image">
+                <img src="thread.jpeg" alt="">
+                <p>Neural Nexus</p>
+            </div>
+            <div id="team-info">
+                <div class="up-down">
+                    <h3>TEAM LEADER</h3>
+                    <li>Ujjwal Paliwal <br>(AI & ML Engineering Student)</li>
+                </div>
+                <div class="left-right">
+                    <div>
+                        <h3>UI DEVELOPER</h3>
+                        <li>Tushar Varshney <br>(CS Core Engineering Student)</li>
+                    </div>
+                    <div>
+                        <h3>UX DEVELOPER</h3>
+                        <li>Tanishq Rastogi <br>(AI & ML Engineering Student)</li>
+                    </div>
+                </div>
+                <div class="up-down">
+                    <h3>BACKEND DEVELOPER</h3>
+                    <li>Daksh Dixit <br>(AI & ML Engineering Student)</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2>-----Thanks for coming here!!-----</h2>
+        <p>
+            Presentation by Team “Neural Nexus”
+            From MIT (Moradabad Institute of Technology),<br> 
+            Affiliated with AKTU (Lucknow, Uttar Pradesh) 
+        </p>
+        <div id="contact-no">
+                <p>Contact Us:</p>
+               <p> +91 9368820035 <br>
+                +91 8791001711</p> 
+        </div>
+    </div>
+    
+
+
+    <!-- script for typing text -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    // for typing text
+    var Typed = new Typed(".typing-text",{
+        strings:["Welcome to E-commerce Tool ", "Let's make Green India and Clean India"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true
+    });
+    // for menuicon
+    let menuIcon = document.querySelector('#menu-icon');
+    let crossIcon = document.querySelector('#cross-icon');
+    let navbar = document.querySelector('.navbar');
+    function menutoggle(){
+        if(navbar.style.display == "block"){
+            menuIcon.style.display="block"
+            crossIcon.style.display="none"
+            navbar.style.display = "none"
+        }
+        else{
+            menuIcon.style.display="none"
+            crossIcon.style.display="block"
+            navbar.style.display = "block"
+        }
+    }   
+    
+</script>
+
+
+   
+</body>
+
+</html>
