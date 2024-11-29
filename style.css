@@ -72,24 +72,28 @@ html::-webkit-scrollbar-thumb{
         display: block;
         text-align: right;
        margin: 20px 20px 0 0;
+       font-size: 20px;
     }
     #cross-icon{
         text-align: right;
-        margin: 20px 170px 0 0;
+        margin: 10px 170px 0 0;
+        font-size: 20px;
+        font-weight: bold;
     }
     .navbar{
         position: fixed;
         top: 0;
         right: 0;
-        width:35%;
-        z-index: 0;
-        border-left: 3px solid rgb(232, 73, 73);
-        border-bottom: 3px solid rgb(232, 73, 73);
+        width:45%;
+        z-index: 999;
+        border-left: 2px solid rgb(20, 84, 2);
+        border-bottom: 2px solid rgb(20, 84, 2);
         border-bottom-left-radius: 2rem;
         padding: 15px 3%;
-        background-color: rgba(255, 255, 255, 0.636);
+        background-color: #6ddc90;
         border-top: 0.1rem solid rgba(0,0,0,0.4);
         display: none;
+        /* transition: 1s ease-in-out; */
     }
     .navbar .active{
         display: block;
@@ -98,13 +102,14 @@ html::-webkit-scrollbar-thumb{
         display: block;
         font-size: 18px;
         margin: 25px 0;
-        color: rgb(111, 12, 181);
+        color: rgb(13, 4, 19);
     }
     .navbar a:hover,
     .navbar a.active{
         padding: 1rem;
+        color: rgb(13, 4, 19);
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid rgb(232, 73, 73);
+        border-bottom: 2px solid rgb(20, 84, 2);
     }
 }
 
@@ -140,7 +145,7 @@ section{
 }
 .description img{
     width: 100%;
-    height: 55vh;
+    /* height: 55vh; */
     border-radius: 35px;
 }
 
@@ -155,6 +160,8 @@ section{
     border-radius: 35px;
     box-shadow: inset 0 0 25px var(--bg-color);
     padding: 55px;
+    box-shadow: inset 0 0 18px #4f4b4bde;
+    margin-top: 25px;
 }
 #camera1,#camera2,#file_upload{
     display: none;
@@ -200,6 +207,7 @@ label[for="file_upload"]:hover{
 
 #about-section{
     background: #fff;
+    padding-bottom: 35px;
 }
 
 h2{
