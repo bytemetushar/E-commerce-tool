@@ -454,19 +454,19 @@ label[for="file_upload"]:hover{
 }
 
 
-@media(max-width:768px){
+@media(max-width:968px){
     #gov{
         flex-direction: column;
     }
     .gov-grid{
-        grid-template-columns:0.5fr;
+        grid-template-columns:1fr;
         margin-left: 5px;
     }
     #pm-image img{
-        width: 170px;
+        width: 200px;
     }
     .gov-grid img{
-        width: 200px;
+        width: 250px;
     }
 
 }
